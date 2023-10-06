@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GRJ1RzYyvV08UIIc6Gns/8eOl2a3zN7tyiVd23ZFjtpbFj9ZtvIbq+D0l00Fa8PxFbMqI41vHkkoDT3mtckgeQ==",
+  "dgSpecHash": "at9iYGLYfpHYi9UXI/uhIYqB7anJjhhhnepd2YHTBsxwa437jF1aQ6WNPnq4zlDGj/ckIHm51gSYrw4uIAO3Qg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vladislav\\source\\repos\\HPFS_F\\HPFS_FA\\HPFS_FA.csproj",
+  "projectFilePath": "C:\\Users\\Vladislav\\Documents\\GitHub\\HPFS_F\\HPFS_F\\HPFS_FA\\HPFS_FA.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vladislav\\.nuget\\packages\\avalonia\\11.0.2\\avalonia.11.0.2.nupkg.sha512",
     "C:\\Users\\Vladislav\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2023020321\\avalonia.angle.windows.natives.2.1.0.2023020321.nupkg.sha512",
