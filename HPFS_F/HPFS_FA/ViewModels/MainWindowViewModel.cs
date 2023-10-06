@@ -12,7 +12,7 @@ namespace HPFS_FA.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {
-        //GGGGG
+        //GGGGGg
         [Reactive] public string login { get; set; }
         [Reactive] public string surname { get; set; }
         [Reactive] public string group { get; set; }
