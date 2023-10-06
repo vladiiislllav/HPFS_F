@@ -1,0 +1,87 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:HPFS_FA.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="HPFS_FA.Views.Registration"
+        Title="Registration"
+        Width="600" Height="500"
+        WindowStartupLocation="CenterScreen"
+        x:DataType="viewModels:MainWindowViewModel">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <viewModels:MainWindowViewModel/>
+    </Design.DataContext>
+
+
+    <Grid ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBox 
+            FontSize="20"
+            FontStyle="Normal"
+            Grid.Column="1" 
+            Grid.Row="1" 
+            Watermark="Логин" 
+            Text="{Binding login}" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center"
+            Height="40" Width="150"/>
+
+        <TextBox
+            FontSize="20"
+            FontStyle="Normal"
+            Grid.Column="1"
+            Grid.Row="2"
+            Watermark="Фамилия"
+            Text="{Binding surname}"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Height="40" Width="150"/>
+
+        <TextBox
+            FontSize="20"
+            FontStyle="Normal"
+            Grid.Column="1"
+            Grid.Row="3"
+            Watermark="Группа"
+            Text="{Binding group}"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Height="40" Width="150"/>
+
+        <Button
+            Content="Регистрация"
+            FontSize="20"
+            FontStyle="Normal"
+            Grid.Column="1"
+            Grid.Row="4"
+            Name="Ok"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Command="{Binding Reg_user}"
+            Height="40" Width="150"/>
+<!--Была ошибка в command, он сам поставил x:DataType="viewModels:MainWindowViewModel"-->
+
+    </Grid>
+
+
+</Window>
