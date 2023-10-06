@@ -36,13 +36,13 @@
 			<ColumnDefinition Width="*"></ColumnDefinition>
 		</Grid.ColumnDefinitions>
 
-		<!--	<TextBox
+		<TextBox
             FontSize="20"
             FontStyle="Normal"
             Grid.Column="1"
             Grid.Row="1"
             Watermark="Логин"
-            Name="{Binding Login}"
+            Text="{Binding login_prog}"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Height="40" Width="150"/>
@@ -55,11 +55,10 @@
             Name="AccessCommand"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            
+            Command="{Binding access_prog}"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
             Height="40" Width="150"/>
-		Почему я не могу написать message с маленькой буквы в Name--> 
 
 		<ListBox
 			Name="ListBox"
@@ -94,6 +93,9 @@
 			HorizontalContentAlignment="Center"
 			VerticalContentAlignment="Center"
 			Height="40" Width="150"/> -->
+
+	
+
 	</Grid>
 
 

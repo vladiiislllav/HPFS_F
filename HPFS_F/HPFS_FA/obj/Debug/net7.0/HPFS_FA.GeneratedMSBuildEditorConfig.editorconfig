@@ -21,5 +21,8 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/Vladislav/Documents/GitHub/HPFS_F/HPFS_F/HPFS_FA/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/Vladislav/Documents/GitHub/HPFS_F/HPFS_F/HPFS_FA/Views/ProgT.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/Vladislav/Documents/GitHub/HPFS_F/HPFS_F/HPFS_FA/Views/Registration.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
