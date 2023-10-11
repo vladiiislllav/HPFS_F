@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Avalonia.Interactivity;
 using HPFS_FA.Views;
 using ReactiveUI;
@@ -18,15 +19,46 @@ namespace HPFS_FA.ViewModels
         [Reactive] public string surname { get; set; } //Это регистрация
         [Reactive] public string group { get; set; }   //Это регистрация
         [Reactive] public string ResultTextPath { get; set; } //Строка - результат в окне Program
+        [Reactive] public ObservableCollection<string> PathBox { get; set; } //Содержимое листбокса
+
+        public ObservableCollection<string> Resultpath = new ObservableCollection<string>();
+
+        //  public List<string> PathBox = new List<string>();
+
+        private MainWindow _windowMain = new MainWindow(); //тест
+
+        private Registration _windowReg; //тест
+
+
+        //  [Reactive] public string PathBox { get; set; }
+
+        public MainWindowViewModel()
+        {
+            //  MainWindow windowMain = new MainWindow();
+            // Registration windowReg = new Registration();
+            // ProgT windowProg = new ProgT();
+            
+
+
+            Pathname();
+           
+           //Resultpath = new ObservableCollection<string>();
+
+        }
+
+
+        /*
+        private MainWindow windowMain = new MainWindow();
+
+        private Registration windowReg = new Registration();
+
+        private ProgT windowProg = new ProgT();*/
 
         public void Reg_window()
-        {
-            var windowReg = new Registration();
-            var windowMain = new MainWindow();
-
-            windowReg.Show();
-            windowMain.Hide();
-            //Не скрывается окно windowMain
+        { 
+            //_windowReg = new Registration();
+            _windowReg.Show();
+            //windowMain.Hide();
         }
 
         public void Reg_user()
@@ -42,16 +74,15 @@ namespace HPFS_FA.ViewModels
 
             Pathname();
 
-            var windowReg = new Registration();
-            windowReg.Hide();
+           _windowReg.Close();
 
         }
 
         //public void PathUser(){}
 
-        [Reactive] public string PathBox { get; set; }
+        
 
-        public ObservableCollection<string> Resultpath = new ObservableCollection<string>();
+         
 
         public void Pathname()
         {
@@ -65,13 +96,14 @@ namespace HPFS_FA.ViewModels
                 
             }
 
-            PathBox += Resultpath; //Не заполняется PathBox папками
+            PathBox = Resultpath; //Не заполняется PathBox папками
 
+            
         }
 
         public void Mywatcher()
         {
-            FileSystemWatcher watcher = new FileSystemWatcher(@"C:\Users\Vladislav\source\repos\HPFS_F\HPFS_FA\Users");
+            FileSystemWatcher watcher = new FileSystemWatcher(@"C:\Users\Vladislav\Documents\GitHub\HPFS_F\HPFS_F\HPFS_FA\Users\");
             watcher.EnableRaisingEvents = true;
 
             watcher.Created += new FileSystemEventHandler(WatcherCreated);
@@ -93,8 +125,7 @@ namespace HPFS_FA.ViewModels
                 }
             }
 
-          var windowProg = new ProgT();
-          windowProg.Show();
+        //  windowProg.Show();
 
         }
 
