@@ -8,7 +8,6 @@ namespace HPFS_FA.Views
         public Registration()
         {
             InitializeComponent();
-            DataContext = new MainWindowViewModel();
         }
     }
 }

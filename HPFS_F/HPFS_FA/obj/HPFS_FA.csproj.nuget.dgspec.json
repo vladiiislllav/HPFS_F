@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vladislav\\Documents\\GitHub\\HPFS_F\\HPFS_F\\HPFS_FA\\HPFS_FA.csproj": {}
+    "C:\\Users\\Seront\\Source\\Repos\\HPFS_F\\HPFS_F\\HPFS_FA\\HPFS_FA.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vladislav\\Documents\\GitHub\\HPFS_F\\HPFS_F\\HPFS_FA\\HPFS_FA.csproj": {
+    "C:\\Users\\Seront\\Source\\Repos\\HPFS_F\\HPFS_F\\HPFS_FA\\HPFS_FA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vladislav\\Documents\\GitHub\\HPFS_F\\HPFS_F\\HPFS_FA\\HPFS_FA.csproj",
+        "projectUniqueName": "C:\\Users\\Seront\\Source\\Repos\\HPFS_F\\HPFS_F\\HPFS_FA\\HPFS_FA.csproj",
         "projectName": "HPFS_FA",
-        "projectPath": "C:\\Users\\Vladislav\\Documents\\GitHub\\HPFS_F\\HPFS_F\\HPFS_FA\\HPFS_FA.csproj",
-        "packagesPath": "C:\\Users\\Vladislav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vladislav\\Documents\\GitHub\\HPFS_F\\HPFS_F\\HPFS_FA\\obj\\",
+        "projectPath": "C:\\Users\\Seront\\Source\\Repos\\HPFS_F\\HPFS_F\\HPFS_FA\\HPFS_FA.csproj",
+        "packagesPath": "C:\\Users\\Seront\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Seront\\Source\\Repos\\HPFS_F\\HPFS_F\\HPFS_FA\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Vladislav\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Seront\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -25,7 +25,7 @@ namespace HPFS_FA.ViewModels
 
         //  public List<string> PathBox = new List<string>();
 
-        private MainWindow _windowMain = new MainWindow(); //тест
+      //  private MainWindow _windowMain = new MainWindow(); //тест
 
         private Registration _windowReg; //тест
 
@@ -37,8 +37,8 @@ namespace HPFS_FA.ViewModels
             //  MainWindow windowMain = new MainWindow();
             // Registration windowReg = new Registration();
             // ProgT windowProg = new ProgT();
-            
 
+            
 
             Pathname();
            
@@ -55,16 +55,17 @@ namespace HPFS_FA.ViewModels
         private ProgT windowProg = new ProgT();*/
 
         public void Reg_window()
-        { 
-            //_windowReg = new Registration();
+        {
+            _windowReg = new Registration();
+            _windowReg.DataContext = this;
             _windowReg.Show();
-            //windowMain.Hide();
+            
         }
 
         public void Reg_user()
         {
             
-            string path = @"C:\Users\Vladislav\Documents\GitHub\HPFS_F\HPFS_F\HPFS_FA\Users\" + login + " " + surname + " " + group;
+            string path = @"Test\" + login + " " + surname + " " + group;
             DirectoryInfo dirinfo = new DirectoryInfo(path);
 
             if (!dirinfo.Exists)
@@ -86,17 +87,17 @@ namespace HPFS_FA.ViewModels
 
         public void Pathname()
         {
-            ObservableCollection<string> folderss = new ObservableCollection<string>(Directory.GetDirectories(@"C:\Users\Vladislav\Documents\GitHub\HPFS_F\HPFS_F\HPFS_FA\Users"));
+            ////ObservableCollection<string> folderss = new ObservableCollection<string>(Directory.GetDirectories(@"C:\Users\Vladislav\Documents\GitHub\HPFS_F\HPFS_F\HPFS_FA\Users"));
 
-            //Resultpath.Clear();
+            ////Resultpath.Clear();
 
-            foreach (string folder in folderss)
-            {
-                Resultpath.Add(Path.GetFileName(folder)); 
+            //foreach (string folder in folderss)
+            //{
+            //    Resultpath.Add(Path.GetFileName(folder)); 
                 
-            }
+            //}
 
-            PathBox = Resultpath; //Не заполняется PathBox папками
+            //PathBox = Resultpath; //Не заполняется PathBox папками
 
             
         }
