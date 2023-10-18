@@ -4,8 +4,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:viewModels="clr-namespace:HPFS_FA.ViewModels"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="HPFS_FA.Views.ProgT"
-        Title="ProgT"
+        x:Class="HPFS_FA.Views.WorkWindow"
+        Title="WorkWindow"
         Width="600" Height="500"
         WindowStartupLocation="CenterScreen"
         x:DataType="viewModels:MainWindowViewModel">
@@ -57,9 +57,20 @@
             VerticalContentAlignment="Center"
             Height="40" Width="150"/>
 
+        <Button
+            Content="Выход"
+            FontSize="20"
+            FontStyle="Normal"
+            Grid.Column="1"
+            Grid.Row="3"
+            Name="Exit"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Command="{Binding Button_Exit}"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Height="40" Width="150"/>
+
     </Grid>
-
-
-
-
+ 
 </Window>

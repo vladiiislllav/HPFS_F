@@ -39,7 +39,7 @@
             Grid.Column="1" 
             Grid.Row="1" 
             Watermark="Логин" 
-            Text="{Binding login}" 
+            Text="{Binding Login}" 
             HorizontalAlignment="Center" 
             VerticalAlignment="Center"
             Height="40" Width="150"/>
@@ -50,7 +50,7 @@
             Grid.Column="1"
             Grid.Row="2"
             Watermark="Фамилия"
-            Text="{Binding surname}"
+            Text="{Binding Surname}"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Height="40" Width="150"/>
@@ -61,7 +61,7 @@
             Grid.Column="1"
             Grid.Row="3"
             Watermark="Группа"
-            Text="{Binding group}"
+            Text="{Binding Group}"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Height="40" Width="150"/>
