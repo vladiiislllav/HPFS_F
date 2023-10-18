@@ -29,7 +29,12 @@ namespace HPFS_FA.ViewModels
         public ObservableCollection<string> Resultpath = new ObservableCollection<string>();
 
         //  public List<string> PathBox = new List<string>();
+<<<<<<< Updated upstream
         //  private MainWindow _windowMain = new MainWindow(); //тест
+=======
+
+        private MainWindow _windowMain; //тест
+>>>>>>> Stashed changes
 
         private Registration _windowReg; //тест
 
@@ -45,6 +50,7 @@ namespace HPFS_FA.ViewModels
             // ProgT windowProg = new ProgT();
 
             Pathname();
+<<<<<<< Updated upstream
            
 
         }
@@ -56,6 +62,45 @@ namespace HPFS_FA.ViewModels
             _windowReg.Show();
             
         }
+=======
+
+
+            
+
+
+
+            //Resultpath = new ObservableCollection<string>();
+
+        }
+
+
+        public void Reg_window()
+        {
+            //_windowReg = new Registration();
+            _windowReg = new Registration();
+            _windowReg.Show();
+            
+            //windowMain.Hide();
+        }
+
+
+
+        /*
+
+        public Registration()
+        {
+
+        }*/
+
+        /*
+        private MainWindow windowMain = new MainWindow();
+
+        private Registration windowReg = new Registration();
+
+        private ProgT windowProg = new ProgT();*/
+
+
+>>>>>>> Stashed changes
 
         public void Reg_user()
         {
@@ -70,12 +115,17 @@ namespace HPFS_FA.ViewModels
 
             Pathname();
             
+<<<<<<< Updated upstream
             Login = string.Empty;
             Surname = string.Empty;
             Group = string.Empty;
             
            _windowReg.Close();
 
+=======
+            _windowReg.Close();
+            
+>>>>>>> Stashed changes
         }
 
         //public void PathUser(){}
