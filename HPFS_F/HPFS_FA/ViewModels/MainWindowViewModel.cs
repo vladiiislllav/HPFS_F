@@ -8,6 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 using Avalonia.Controls.Templates;
 using ReactiveUI.Fody.Helpers;
 using System.Collections.ObjectModel;
+using System.Text.RegularExpressions;
 using Avalonia.Controls;
 using HPFS_FA.Models;
 
